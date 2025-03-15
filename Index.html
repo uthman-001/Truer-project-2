@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="codeBloom Accessibility Exercise"/>
+    <link rel="stylesheet" href="style project.css">
+    <title>Accessibility Exercise</title>
+</head>
+<body>
+    <header>
+<img src="project 2.png" alt="Codebloon logo" id="logo">
+<h1>HTML\CSS Exercise</h1>
+<nav>
+<ul>
+<li><a href="#student-profile"
+accesskay="s">PROFILE</a></li>
+
+<li><a href="#html-queries"
+accesskay="q">HTML</a></li>
+
+<li><a href="#css-queries"
+accesskay="q">CSS</a></li>
+</ul>
+</nav>
+    </header>
+
+    <main>
+<form>
+<section role="region"
+arial-labelledby="student-profial">
+<h2 id="student-profile" class="sp">Student profile</h2>
+<div class="profile">
+<label for="student-name">Name:</label>
+<input type="text" id="student-name" name="student-name">
+</div>
+
+<div class="profile">
+<label for="student-email">Email:</label>
+<input type="email" id="student-email" name="student-email"></div>
+
+<div class="profile">
+<label for="student-birth-date">D.O.B<span class="sr-only">(Date of Birth)</span>:</label>
+<input type="date" id="student-birth-date" name="student-birth-date">
+</div>
+</section>
+
+<section role="region"
+arial-labelledby="html-queries">
+<h2 id="html-queries">HTML</h2>
+<div class="query-block">
+<p>1</p>
+<fieldset class="query" name="html-query-one">
+<lenged>HTML is a programming language</lenged>
+<ul class="answer-list">
+<li>
+<label for="q1 a1"> <input type="radio" name="q1" id="q1 a1" value="false">True</label>
+</li>
+<li>
+<label for="q1 a2"> <input type="radio" name="q1" id="q1 a2" value="true">False</label>
+</li>
+</ul>
+</fieldset>
+</div>
+
+<div class="query-block">
+<p>2</p>
+<fieldset class="query" name="html-query-two">
+<lenged>Lengend can be placed anywhere in the fieldset tag</lenged>
+<ul class="answer-list">
+<li>
+<label for="q2 a1"> <input type="radio" name="q2" id="q2 a1" value="true">True</label>
+</li>
+<li>
+<label for="q2 a2"> <input type="radio" name="q2" id="q2 a2" value="false">False</label>
+</li>
+</ul>
+</fieldset>
+</div>
+
+<div class="query-block">
+<p>3</p>
+<fieldset class="query" name="html-query-two">
+<lenged>What is the purpose of the head in HTML?</lenged>
+<ul class="answer-list">
+<li>
+<label for="q3 a1"> <input type="checkbox" name="q3" id="q3 a1" value="correct">To define a title of a document</label>
+</li>
+<li>
+<label for="q3 a2"> <input type="checkbox" name="q3" id="q3 a2" value="incorrect">To define the style of a document</label>
+</li>
+<li>
+<label for="q3 a3"> <input type="checkbox" name="q3" id="q3 a3" value="correct">To contain metadata about the HTML document</label>
+</li>
+</ul>
+</fieldset>
+</div>
+</section>
+
+<section role="region"
+arial-labelledby="css-queries">
+<h2 id="css-queries">CSS</h2>
+    <div class="css-row">
+<div class="queryblock">
+<label class="css-query">CSS is used to control the layout of a web page?</label>
+</div>
+
+<div class="answer">
+<select class="css-query" name="css-query" required>
+<option value="">Select an option</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+</select>
+</div><br>
+
+<div class="queryblock">
+<label class="css-query">Would having two or more ID selectors with the same name cause a smooth running, and also help the browser to be able to target the correct HTML element?</label>
+</div>
+
+<div class="answer">
+<select class="css-query" name="css-query" required>
+<option value="">Select an option</option>
+<option value="yes">Yes</option>
+<option value="no">No</option>
+</select>
+</div><br>
+
+<div class="queryblock">
+<label class="css-query">Do you have any questions?</label>
+</div>
+
+<div class="answer">
+<textarea cols="25" rows="5" id="css-query" class="css-query" placeholder="A CSS box model is..."></textarea>
+</div>
+    </div>
+</section>
+<button type="submit" class="btn">Submit</button>
+</form>
+    </main>
+
+    <footer>
+<address> 
+<a href="#">CodeBloom</a> <br/>Lagos <br/>Island <br/>Nigeria.
+</address>
+    </footer>
+
+</body>
+</html>
